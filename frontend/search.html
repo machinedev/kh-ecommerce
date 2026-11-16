@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pencarian - KH Commerce</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="container">
+    <h2 class="section-title" id="search-heading">Cari produk</h2>
+    <div class="toolbar">
+        <input type="text" id="search-input" placeholder="Kata kunci...">
+        <button class="btn" id="search-button" onclick="window.location.href='/search.html?q='+encodeURIComponent(document.getElementById('search-input').value)">Cari</button>
+    </div>
+    <div class="grid" id="search-results"></div>
+</main>
+<footer class="container">KH Commerce - Ecommerce No.1 Seantero Bali</footer>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/products.js"></script>
+<script>productPages.initSearch();</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daftar - KH Commerce</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="container">
+    <form id="register-form" class="panel form-narrow">
+        <h2 class="center">Daftar Akun</h2>
+        <div class="form-row">
+            <label for="register-username">Username</label>
+            <input type="text" id="register-username" required>
+        </div>
+        <div class="form-row">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required>
+        </div>
+        <div class="form-row">
+            <label for="register-name">Nama tampilan</label>
+            <input type="text" id="register-name" required>
+        </div>
+        <div class="form-row">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" required>
+        </div>
+        <div class="form-row">
+            <label for="register-confirm">Konfirmasi password</label>
+            <input type="password" id="register-confirm" required>
+        </div>
+        <button class="btn" type="submit" style="width:100%">Daftar</button>
+        <p class="center" style="margin-top:14px">Sudah punya akun? <a href="/login.html">Masuk</a></p>
+    </form>
+</main>
+<footer class="container">KH Commerce - Ecommerce No.1 Seantero Bali</footer>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/auth.js"></script>
+<script>authPages.initRegister();</script>
+</body>
+</html>

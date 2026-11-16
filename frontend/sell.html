@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jual Produk - KH Commerce</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="container">
+    <form id="sell-form" class="panel">
+        <h2 id="sell-title">Jual Produk</h2>
+        <div class="form-row">
+            <label for="sell-name">Nama produk</label>
+            <input type="text" id="sell-name" required>
+        </div>
+        <div class="form-row">
+            <label>Deskripsi produk</label>
+            <div class="editor" id="wysiwyg">
+                <div class="editor-toolbar">
+                    <button type="button" data-cmd="bold"><b>B</b></button>
+                    <button type="button" data-cmd="italic"><i>I</i></button>
+                    <button type="button" data-cmd="underline"><u>U</u></button>
+                    <button type="button" data-cmd="insertUnorderedList">Daftar</button>
+                    <button type="button" data-cmd-link="1">Tautan</button>
+                    <button type="button" data-upload="1">Gambar</button>
+                </div>
+                <div class="editor-surface" contenteditable="true" data-placeholder="Tulis deskripsi produk..."></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="sell-price">Harga (Rp)</label>
+            <input type="number" id="sell-price" min="0" required>
+        </div>
+        <div class="form-row">
+            <label for="sell-stock">Stok</label>
+            <input type="number" id="sell-stock" min="0" required>
+        </div>
+        <div class="form-row">
+            <label for="sell-category">Kategori</label>
+            <select id="sell-category"></select>
+        </div>
+        <div class="form-row">
+            <label for="sell-image">URL gambar</label>
+            <input type="text" id="sell-image" placeholder="https://...">
+            <button type="button" class="btn small secondary" id="preview-image" style="margin-top:8px">Pratinjau gambar</button>
+        </div>
+        <div class="form-row">
+            <label for="sell-document">Dokumen produk (XML)</label>
+            <input type="file" id="sell-document" accept=".xml,application/xml,text/xml">
+            <div class="muted" id="document-status"></div>
+        </div>
+        <button class="btn" type="submit">Simpan Produk</button>
+    </form>
+</main>
+<footer class="container">KH Commerce - Ecommerce No.1 Seantero Bali</footer>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/wysiwyg.js"></script>
+<script src="/js/products.js"></script>
+<script>productPages.initSell();</script>
+</body>
+</html>

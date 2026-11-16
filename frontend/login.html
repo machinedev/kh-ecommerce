@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Masuk - KH Commerce</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="container">
+    <form id="login-form" class="panel form-narrow">
+        <h2 class="center">Masuk</h2>
+        <div class="form-row">
+            <label for="login-username">Username atau Email</label>
+            <input type="text" id="login-username" required>
+        </div>
+        <div class="form-row">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+        </div>
+        <button class="btn" type="submit" style="width:100%">Masuk</button>
+        <p class="center" style="margin-top:14px">
+            <a href="/forgot-password.html">Lupa password?</a> &middot; <a href="/register.html">Daftar</a>
+        </p>
+    </form>
+</main>
+<footer class="container">KH Commerce - Ecommerce No.1 Seantero Bali</footer>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/auth.js"></script>
+<script>authPages.initLogin();</script>
+</body>
+</html>

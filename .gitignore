@@ -1,0 +1,16 @@
+.env
+backend/vendor/
+**/__pycache__/
+.pytest_cache/
+
+# Security / lab artifacts unrelated to deployment
+POC/
+SKILLS/
+tests/
+docs/
+*.zip
+
+# Editor / tooling config
+opencode.json
+.opencode/
+uploads/

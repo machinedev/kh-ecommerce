@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KH Commerce - Ecommerce No.1 Seantero Bali</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+
+<section class="hero">
+    <div class="container">
+        <h1>Belanja produk lokal Bali</h1>
+        <p>Temukan kerajinan, fashion, kuliner, dan produk kecantikan dari penjual terpercaya.</p>
+        <a class="btn secondary" href="/products.html">Jelajahi Produk</a>
+    </div>
+</section>
+
+<main class="container">
+    <h2 class="section-title">Produk Pilihan</h2>
+    <div class="grid" id="featured"></div>
+
+    <h2 class="section-title">Produk Terbaru</h2>
+    <div class="grid" id="latest"></div>
+
+    <h2 class="section-title">Kategori</h2>
+    <div id="category-list"></div>
+
+    <h2 class="section-title">Penjual Populer</h2>
+    <div class="grid" id="seller-list"></div>
+</main>
+
+<footer class="container">KH Commerce - Ecommerce No.1 Seantero Bali</footer>
+
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/products.js"></script>
+<script>productPages.initHome();</script>
+</body>
+</html>

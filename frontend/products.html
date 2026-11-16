@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Produk - KH Commerce</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="container">
+    <h2 class="section-title">Semua Produk</h2>
+    <div class="toolbar">
+        <input type="text" id="filter-search" placeholder="Cari produk...">
+        <select id="filter-category"></select>
+        <button class="btn" id="filter-apply">Terapkan</button>
+    </div>
+    <div class="grid" id="product-grid"></div>
+    <div class="pagination" id="pagination"></div>
+</main>
+<footer class="container">KH Commerce - Ecommerce No.1 Seantero Bali</footer>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/products.js"></script>
+<script>productPages.initListing();</script>
+</body>
+</html>
